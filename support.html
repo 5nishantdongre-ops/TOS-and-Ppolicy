@@ -41,13 +41,25 @@ document.getElementById("feedbackForm").addEventListener("submit", async functio
     const mergedResponse = email + "\n\n" + feedback;
 
     try {
-        const res = await fetch("https://vivioffi.com/api/report/feedback?feedbackuser=0&response=" + encodeURIComponent(mergedResponse), {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Require-Auth": "false" // optional custom header
-            }
-        });
+        const res = await fetch(
+  
+        
+            "https://vivioffi.com/api/report/feedback?feedbackuser=0&response=" 
+  
+            + encodeURIComponent(mergedResponse),
+  
+            {
+    
+                method: "POST",
+    
+                headers: {
+      
+                    "Require-Auth": "false"
+    
+                }
+  }
+);
+
 
         const result = await res.text();
         alert("Feedback sent successfully!\nResponse: " + result);
