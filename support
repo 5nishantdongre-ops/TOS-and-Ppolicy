@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Umefy Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #d32f2f; /* Umefy red */
+            margin-bottom: 15px;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #d32f2f;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Umefy Support</h1>
+    <p>
+        Hey there! 👋<br>
+        We’re always here to help you have the best Umefy experience!<br>
+        Facing a hiccup, have a question, or just want to send us some love? 💌<br>
+        Drop your feedback below and we’ll get back to you ASAP! 🚀
+    </p>
+    <form method="POST" action="/api/feedback">
+        <input type="email" name="email" placeholder="Your Email ID" required>
+        <textarea name="message" placeholder="Describe your issue or feedback here..." required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+</body>
+</html>
